@@ -8,7 +8,6 @@ var body = document.querySelector('body')
 
 
 function getData(id) {
-
     main.innerHTML = ""
     var request = new XMLHttpRequest();
     const search_value = input.value
@@ -37,7 +36,7 @@ input.addEventListener('keypress', (e) => {
 function generateElements(data) {
     data.forEach(e => {
         const videoCard = document.createElement('div')
-        videoCard.setAttribute('class', 'col-4 thumb')
+        videoCard.setAttribute('class', 'col-4 mx card')
         var thumbnail = document.createElement('img')
         thumbnail.setAttribute('src', `${e.snippet.thumbnails.medium.url}`)
         const video_title = document.createElement('h2')

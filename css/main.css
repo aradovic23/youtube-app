@@ -7,13 +7,15 @@ body {
 .wrap {
   margin: 0 auto;
   width: 100%;
-  max-width: 980px; }
+  max-width: 1200px; }
 
 .header {
   margin-top: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+padding-left: 30px;
+padding-right: 30px; }
   .header h1 {
     font-size: 32px; }
     .header h1 span {
@@ -32,25 +34,27 @@ body {
 .hideVideo {
   display: none; }
 
-.thumb {
+.card {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
   border-collapse: collapse;
-  margin-bottom: 20px; }
-  .thumb:hover {
+  margin-bottom: 20px; 
+max-height: 500px;
+overflow: hidden;}
+  .card:hover {
     border: 1px solid #6200EE; }
-  .thumb img {
+  .card img {
     width: 100%;
     height: 225px;
     border-radius: 5px;
     padding-bottom: 10px; }
-  .thumb h2 {
+  .card h2 {
     font-size: 25px;
     color: #6200EE;
     font-weight: bold;
     padding-top: 5px; }
-  .thumb p {
+  .card p {
     font-size: 14px; }
 
 .head {
